@@ -68,6 +68,12 @@ small{
 	display: flex;
   justify-content: center;
 }
+
+.centrar{
+	display: flex;
+  justify-content: center;
+}
+
 .nombre_referencia{
 	font-weight: bold;
 }
