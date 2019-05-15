@@ -8,7 +8,6 @@ Jinja2==2.10.1
 MarkupSafe==1.1.1
 pipenv==2018.11.26
 pycurl==7.43.0
-python-apt==1.1.0b1+ubuntu0.16.4.1
 typing==3.6.6
 unity-lens-photos==1.0
 vboxapi==1.0
