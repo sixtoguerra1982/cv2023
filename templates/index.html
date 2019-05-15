@@ -116,8 +116,8 @@
 				<div class="presentacion">
 					&nbsp;&nbsp;&nbsp;_Me he desempeñado en el área de desarrollo de software, soporte informático, helpdesk y administrador de equipos informáticos en general, con experiencia superior a 10 años en el mercado informático, desarrollando, implementando, coordinando y administrando sistemas computacionales y operaciones que involucran cambios y adaptación de procesos. Con la experiencia he incrementado cualidades y competencias importantes que se necesitan para el cargo tales como: Planificación, auto-administración, liderazgo, control.
 				</div>
-				<hr style="border: 0 ; border-top: 4px double blue; width: 90%;">
-				<div class="organizador">
+				<hr style="border: 0 ; border-top: 4px double blue; width: 90%; position: relative">
+				<div class="organizador" id="sidebar">
 					<div class="btn-toolbar" role="toolbar" aria-label="Toolbar with button groups">
 					  <div class="btn-group mr-2" role="group" aria-label="First group">
 					    <div type="button" class="btn btn-primary" onclick="MyChangeElement(1)" id="boton1">1</div>
@@ -222,11 +222,26 @@
 						</ul>
 					</div>
 				</div>
-
 			</div>
 		</div>
 	</div>
 	<script type="text/javascript">
+
+		$(document).ready(function() {
+			var $window = $(window);
+  		var $sidebar = $("#sidebar");
+			var $sidebarOffset = $sidebar.offset();
+			var $activo3 =$("#boton3")
+			$window.scroll(function() {
+    	if($window.scrollTop() > $sidebarOffset.top) {
+				if ($activo3.hasClass('btn-secondary')){
+      		 	$sidebar.addClass("fixed");
+					 }
+    	} else {
+      		$sidebar.removeClass("fixed");
+    	}
+  			});
+		})
 
 		window.onload = function(){
 			document.getElementById("seccion2").style.display = 'none';
@@ -257,6 +272,11 @@
 					}
 				}
 			}
+			if (number == 3){
+				var $sidebar = $("#sidebar");
+				$sidebar.removeClass("fixed");
+			}
 		}
+
 	</script>
 {% endblock%}
