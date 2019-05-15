@@ -227,6 +227,12 @@
 	</div>
 	<script type="text/javascript">
 
+		window.onload = function(){
+			document.getElementById("seccion2").style.display = 'none';
+			document.getElementById("seccion3").style.display = 'none';
+		}
+
+
 		$(document).ready(function() {
 			var $window = $(window);
   		var $sidebar = $("#sidebar");
@@ -242,11 +248,6 @@
     	}
   			});
 		})
-
-		window.onload = function(){
-			document.getElementById("seccion2").style.display = 'none';
-			document.getElementById("seccion3").style.display = 'none';
-		}
 
 		function MyChangeElement(number){
 			for (var i = 1; i < 4; i++){
@@ -272,9 +273,10 @@
 					}
 				}
 			}
-			if (number == 3){
+			if (number == 3 || number == 2){
 				var $sidebar = $("#sidebar");
 				$sidebar.removeClass("fixed");
+				window.scrollTo(0, 0);
 			}
 		}
 
