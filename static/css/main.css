@@ -64,14 +64,13 @@ body {
 	margin-bottom: 10px;
 }
 
-small{
+.centrar{
 	display: flex;
   justify-content: center;
 }
 
-.centrar{
-	display: flex;
-  justify-content: center;
+.download{
+	display: inline-block;
 }
 
 .nombre_referencia{
