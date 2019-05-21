@@ -3,9 +3,9 @@
   background: #007bff;
   border-radius: 3%;
   border : 0.5px solid white;
-  -webkit-box-shadow: 3px 4px 5px 0px rgba(0,0,0,0.75);
-  -moz-box-shadow: 3px 4px 5px 0px rgba(0,0,0,0.75);
-  box-shadow: 3px 4px 5px 0px rgba(0,0,0,0.75);
+  -webkit-box-shadow: 1px 4px 5px 0px rgba(0,0,0,0.75);
+  -moz-box-shadow: 1px 4px 5px 0px rgba(0,0,0,0.75);
+  box-shadow: 1px 4px 5px 0px rgba(0,0,0,0.75);
   padding-top: 5px;
   padding-bottom: 5px;
 }
