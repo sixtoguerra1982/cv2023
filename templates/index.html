@@ -48,7 +48,7 @@
 		            			</a>
 	            			</div>
 						</div>
-						
+
 					</div>
 					<hr>
 					<ul>
@@ -150,7 +150,7 @@
 				<div class="presentacion">
 					&nbsp;&nbsp;&nbsp;_Me he desempeñado en el área de desarrollo de software, soporte informático, helpdesk y administrador de equipos informáticos en general, con experiencia superior a 10 años en el mercado informático, desarrollando, implementando, coordinando y administrando sistemas computacionales y operaciones que involucran cambios y adaptación de procesos. Con la experiencia he incrementado cualidades y competencias importantes que se necesitan para el cargo tales como: Planificación, auto-administración, liderazgo, control.
 				</div>
-				<hr style="border: 0 ; border-top: 4px double blue; width: 90%; position: relative">
+				<hr id="ancla" style="border: 0 ; border-top: 4px double blue; width: 90%; position: relative">
 				<div class="organizador" id="sidebar">
 					<div class="btn-toolbar" role="toolbar" aria-label="Toolbar with button groups">
 					  <div class="btn-group mr-2" role="group" aria-label="First group">
@@ -284,6 +284,12 @@
 		})
 
 		function MyChangeElement(number){
+
+			// mueve scroll
+			var destino = $("#ancla").offset().top;
+			var navbar = $("#navbar").css("height");
+			$('html, body').animate({scrollTop: parseInt(destino) - parseInt(navbar)},800);
+			//
 			for (var i = 1; i < 4; i++){
 				if (i == number){
 					document.getElementById("seccion" + i).style.display = 'block';
