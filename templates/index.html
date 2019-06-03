@@ -8,8 +8,7 @@
 					<div class="avatar">
 					 <img src="https://media.licdn.com/dms/image/C4D03AQEmW9nVy-1AyQ/profile-displayphoto-shrink_200_200/0?e=1562803200&v=beta&t=OX7YZYhXcx7IBirEGKj5kuFVzS4PmlwXZTlau9JJc9A">
 					</div>
-					<h1 class="nombre">Sixto Felipe Guerra Urbina.
-					</h1>
+					<h1 class="nombre"><div id="text"></div></h1>
 					<div class="centrar">
 						<small>Web Developer Junior</small>
 					</div>
@@ -131,14 +130,13 @@
 							<span>Skills:</span>
 						</p>
 					</li>
-
 						<div><i class="fas fa-list-ol"></i>&nbsp;HTML5<div class="progress">100%<div class="progress-bar w-100"></div></div></div>
 						<div><i class="fas fa-list-ol"></i>&nbsp;CSS3<div class="progress">75%<div class="progress-bar w-75"></div></div></div>
 						<div><i class="fas fa-list-ol"></i>&nbsp;Bootstrap<div class="progress">75%<div class="progress-bar w-75"></div></div></div>
 						<div><i class="fas fa-list-ol"></i>&nbsp;JavaScript<div class="progress">70%<div class="progress-bar w-70"></div></div></div>
 						<div><i class="fas fa-list-ol"></i>&nbsp;Ruby & Rails<div class="progress">80%<div class="progress-bar w-80"></div></div></div>
-
-
+						<div><i class="fas fa-list-ol"></i>&nbsp;Ruby<div class="progress">80%<div class="progress-bar w-80"></div></div></div>
+						<div><i class="fas fa-list-ol"></i>&nbsp;SQL<div class="progress">90%<div class="progress-bar w-90"></div></div></div>
 				</ul>
 			</div>
 
@@ -264,6 +262,17 @@
 		window.onload = function(){
 			document.getElementById("seccion2").style.display = 'none';
 			document.getElementById("seccion3").style.display = 'none';
+			var i, text;
+			i = 0;
+			text = "Sixto Felipe Guerra Urbina"
+			typing();
+			function typing(){
+				if (i<text.length){
+					document.getElementById("text").innerHTML += text.charAt(i);
+					i++;
+					setTimeout(typing,100);
+				}
+			}
 		}
 
 
