@@ -149,7 +149,7 @@ hr{
 	font-weight: normal;
 	margin: 0 auto;
 	display: block;
-	text-align: justify;
+	text-align: inherit;
 	margin-right: 15%;
 	padding-top: 1%;
 }
