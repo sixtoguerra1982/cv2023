@@ -148,8 +148,10 @@ hr{
 .item_li{
 	font-weight: normal;
 	margin: 0 auto;
-	margin-left: 11%;
 	display: block;
+	text-align: justify;
+	margin-right: 15%;
+	padding-top: 1%;
 }
 
 .item_li::before {
