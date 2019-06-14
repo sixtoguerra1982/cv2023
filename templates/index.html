@@ -303,7 +303,16 @@
 			var $window = $(window);
   		var $sidebar = $("#sidebar");
 			var $sidebarOffset = $sidebar.offset();
-			var $activo3 =$("#boton3")
+			var $activo3 = $("#boton3");
+			$window.scroll(function() {
+    	if($window.scrollTop() > $sidebarOffset.top) {
+				if ($activo3.hasClass('btn-secondary')){
+      		 	$sidebar.addClass("fixed-bottom");
+					 }
+    	} else {
+      		$sidebar.removeClass("fixed-bottom");
+    	}
+  			});
 		})
 
 		function MyChangeElement(number){
