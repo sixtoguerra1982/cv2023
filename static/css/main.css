@@ -35,6 +35,10 @@ body {
 	text-decoration: underline;
 }
 
+.tablero ul li{
+	list-style-type: square;
+}
+
 .avatar {
 	line-height: 0;
 	display: inline-block;
@@ -134,6 +138,13 @@ hr{
 }
 .subtitulo h4{
 	margin-top: 10px;
+	font-style: normal;
+}
+
+h4::before{
+	font-family: "Font Awesome 5 Pro";
+	color : #007bff;
+	content: " \f36 ";
 }
 
 .subtitulo hr{
