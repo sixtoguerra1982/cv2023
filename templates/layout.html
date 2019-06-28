@@ -38,26 +38,27 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 
-		<nav id = "navbar" class="navbar sticky-top navbar-expand-lg navbar-light bg-light">
-		  <a class="navbar-brand class_a_href" href="none">GuerraSoft</a>
-		  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-		    <span class="navbar-toggler-icon"></span>
-		  </button>
 
-		  <div class="collapse navbar-collapse" id="navbarSupportedContent">
-		    <ul class="navbar-nav mr-auto">
-		      <li class="nav-item active">
-		        <a class="nav-link" id="home" href="/">Curriculum Vitae <span class="sr-only">(current)</span></a>
-		      </li>
-		      <li class="nav-item">
-		        <a class="nav-link" href="{{ url_for('about') }}" style="display:none">About <span class="sr-only">(current)</span></a>
-		      </li>
-		    </ul>
-		  </div>
+		<nav id="navbar">
+			<ul>
+				<li class="nohover"><a href="#"><i class="fas fa-desktop fa-2x"></i></a></li>
+				<li id="submenu">
+					<a href="#">Curriculum Vitae<i class="fas fa-caret-square-down"></i></a>
+					<ul class="children">
+						<li><a href="#">Ruby & Rails</a></li>
+						<li><a href="#">Formación</a></li>
+						<li><a href="#">Skills</a></li>
+					</ul>
+				</li>
+				<li><a href="#">Contactame</a></li>
+			</ul>
 		</nav>
-		<div class="container p-4">
+
+
+		<div class="container main">
 			{% block content %}
 			{% endblock %}
 		</div>
+
 	</body>
 </html>

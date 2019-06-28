@@ -263,6 +263,78 @@ h4::before{
 #home{
 	color: rgba(255,255,255,1);
 }
-.nav-link:hover{
-	background-color: blue;
+
+
+nav{
+	background-color: #F8FFFD;
+	padding: 0;
+	width: 100%;
+	position: fixed;
+	top: 0;
+	z-index: 2;
+	border-bottom: 1px solid black;
+	-webkit-box-shadow: 0px 1px 9px 0px rgba(0,0,0,0.75);
+	-moz-box-shadow: 0px 1px 9px 0px rgba(0,0,0,0.75);
+	box-shadow: 0px 1px 9px 0px rgba(0,0,0,0.75);
+	height: 60px;
+}
+
+.main{
+	margin-top: 65px;
+}
+
+nav #submenu i{
+	padding-left: 10px;
+}
+nav ul{
+	list-style: none;
+	margin: 0 auto;
+}
+
+nav ul li{
+	display: inline-block;
+	position: relative;
+}
+
+nav ul li:hover{
+	background-color: #007bff;
+}
+
+nav ul li:hover > a {
+	color: white;
+}
+
+nav ul .nohover:hover > a {
+	background-color: #F8FFFD;
+	color: black;
+}
+
+nav ul li a{
+	display: block;
+	text-decoration: none;
+	padding: 15px 15px 0px 15px;
+	color: black;
+	/* text-shadow: 0.3px 1px 0.3px 1px  */
+	text-shadow: 1px 1px 0.8px #007bff;
+}
+
+ul .children{
+	padding: 0;
+}
+
+nav ul li .children{
+	display: none;
+	border: 1px solid black;
+	z-index: 3;
+}
+
+nav ul li:hover .children{
+	display: block;
+	background-color: #F8FFFD;
+	position: absolute;
+}
+
+nav ul li .children li{
+	border-bottom: 1px solid rgba(0,0,0,.5);
+ 	width: 100%;
 }
