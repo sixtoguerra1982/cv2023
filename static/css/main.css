@@ -1,3 +1,7 @@
+/*
+blue : #007bff;
+fondo_blanco :  #F8FFFD;
+*/
 
 body {
 	background: #373B44;  /* fallback for old browsers */
@@ -6,14 +10,14 @@ body {
 	font-family: 'Cinzel', monospace;
 }
 
-.active{
-	background-color: blue;
-	border-radius: 10%;
+.collapse_personal:hover{
+	background-color: #007bff;
+	color: white;
 }
 
-.collapse_personal:hover{
-	background-color: blue;
-	color: white;
+.collapse_personal:hover > .fa-address-book{
+	background-color:  #F8FFFD;
+	color: #007bff;
 }
 
 .class_a_href {
@@ -168,15 +172,15 @@ h4::before{
 
 .item_li::before {
 	content: "»";
-	color: blue;
+	color: #007bff;
 }
 .item_li::after {
 	content: ".";
-	color: blue;
+	color: #007bff;
 }
 .item_li:hover::before {
 	color: white;
-	background-color: blue;
+	background-color: #007bff;
 	border-radius: 80%;
 }
 
@@ -199,7 +203,6 @@ h4::before{
   	align-items: center;
   	justify-content: flex-end;
   	padding-right: 6%;
-
 }
 
 .collapse_personal{
@@ -259,11 +262,6 @@ h4::before{
 .w-80{
 	width: 80%;
 }
-
-#home{
-	color: rgba(255,255,255,1);
-}
-
 
 nav{
 	background-color: #F8FFFD;
