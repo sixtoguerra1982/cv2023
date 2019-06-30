@@ -139,6 +139,8 @@ hr{
 
 .subtitulo{
 	padding: 10px;
+	background-color: #F8FFFD;
+	border-radius: 3%;
 }
 .subtitulo h4{
 	margin-top: 10px;
@@ -358,5 +360,25 @@ nav ul li .children li{
 footer img {
 	width: 40px;
 	height: 20px;
+}
 
+.rebotelr{
+	-webkit-animation: 1s rebotelr 1;
+}
+
+@-webkit-keyframes rebotelr{
+	0%{
+		opacity: 0;
+		-webkit-transform:translateX(-2000px);
+	}
+	20%{
+		opacity: 1;
+	}
+	50%{
+		opacity: 0;
+		-webkit-transform:translateX(30px);
+	}
+	70%{
+		-webkit-transform:translateX(-10px);
+	}
 }
