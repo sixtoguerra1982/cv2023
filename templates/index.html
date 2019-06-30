@@ -291,7 +291,19 @@
 						</ul>
 					</div>
 				</div>
+
+				<div class="organizador" id="sidebardown">
+					<div class="btn-toolbar" role="toolbar" aria-label="Toolbar with button groups">
+					  <div class="btn-group mr-2" role="group" aria-label="First group">
+					    <div type="button" class="btn btn-primary" onclick="MyChangeElement(1)" id="botondown1">1</div>
+					    <div type="button" class="btn btn-secondary" onclick="MyChangeElement(2)" id="botondown2">2</div>
+					    <div type="button" class="btn btn-secondary" onclick="MyChangeElement(3)" id="botondown3">3</div>
+					  </div>
+					 </div>
+				</div>
+
 			</div>
+
 		</div>
 	</div>
 	<script type="text/javascript">
@@ -327,20 +339,25 @@
 			$window.scroll(function() {
     	if($window.scrollTop() > $sidebarOffset.top) {
 				if ($activo3.hasClass('btn-secondary')){
-      		 	$sidebar.addClass("fixed-bottom");
+						document.getElementById("sidebardown").style.display = 'flex';
 					 }
     	} else {
-      		$sidebar.removeClass("fixed-bottom");
+					document.getElementById("sidebardown").style.display = 'none';
+					$sidebar.css("position","static");
     	}
   			});
 		})
 
 		function MyChangeElement(number){
-
 			// mueve scroll
 			var destino = $("#ancla").offset().top;
 			var navbar = $("#navbar").css("height");
-			$('html, body').animate({scrollTop: parseInt(destino) - parseInt(navbar)},800);
+			if (number == 3) {
+				$('html, body').animate({scrollTop: parseInt(destino) - parseInt(navbar)});
+			}
+			else {
+				$('html, body').animate({scrollTop: parseInt(destino) - parseInt(navbar)},800);
+			}
 			//
 			for (var i = 1; i < 4; i++){
 				if (i == number){
@@ -350,11 +367,16 @@
 					document.getElementById("seccion" + i).style.display = 'none';
 				}
 				var activar_boton = document.getElementById("boton" + i);
-
+				var activar_boton_down = document.getElementById("botondown" + i);
 				if ( i == number ) {
 					if (activar_boton.classList.contains("btn-secondary")){
 						activar_boton.classList.toggle ("btn-primary");
 						activar_boton.classList.toggle ("btn-secondary");
+					}
+
+					if (activar_boton_down.classList.contains("btn-secondary")){
+						activar_boton_down.classList.toggle ("btn-primary");
+						activar_boton_down.classList.toggle ("btn-secondary");
 					}
 				}
 				else
@@ -363,11 +385,12 @@
 						activar_boton.classList.remove("btn-primary");
 						activar_boton.classList.add("btn-secondary");
 					}
+
+					if (activar_boton_down.classList.contains("btn-primary")){
+						activar_boton_down.classList.remove("btn-primary");
+						activar_boton_down.classList.add("btn-secondary");
+					}
 				}
-			}
-			if (number == 3 || number == 2){
-				var $sidebar = $("#sidebar");
-				$sidebar.removeClass("fixed");
 			}
 		}
 

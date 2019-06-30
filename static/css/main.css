@@ -336,3 +336,26 @@ nav ul li .children li{
 	border-bottom: 1px solid rgba(0,0,0,.5);
  	width: 100%;
 }
+
+/*  FOOTER */
+
+.breadcrumb{
+	margin-top: 16px;
+	margin-bottom: 0;
+	border-radius: 0;
+
+
+	background-color: #F8FFFD;
+
+	border-top: 1px solid black;
+	-webkit-box-shadow: 0px 1px 9px 0px rgba(0,0,0,0.75);
+	-moz-box-shadow: 0px 1px 9px 0px rgba(0,0,0,0.75);
+	box-shadow: 0px 1px 9px 0px rgba(0,0,0,0.75);
+
+	text-shadow: 1px 1px 0.8px #007bff;
+}
+
+footer ol li img {
+	width: 40px;
+	height: 20px;
+}
