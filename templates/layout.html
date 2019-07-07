@@ -35,8 +35,8 @@
 	<body>
 
 		<script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+	    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+	    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 
 
 		<nav id="navbar">
@@ -45,9 +45,9 @@
 				<li id="submenu">
 					<a href="#">Curriculum Vitae<i class="fas fa-caret-square-down"></i></a>
 					<ul class="children">
-						<li><a href="#ror">Ruby & Rails</a></li>
-						<li><a href="#ancla">Formación</a></li>
-						<li><a href="#skills">Skills</a></li>
+						<li><a class="scroll-link" href="#ror">Ruby & Rails</a></li>
+						<li><a class="scroll-link" href="#ancla">Formación</a></li>
+						<li><a class="scroll-link" href="#skills">Skills</a></li>
 					</ul>
 				</li>
 				<li><a href="#" style="display:none">Contactame</a></li>
@@ -67,6 +67,6 @@
 				<li class="breadcrumb-item"><img class="img-fluid" src="{{ url_for('static', filename='images/flask.svg') }}"></li>
 		  </ol>
 		</footer>
-
+		<script src="{{ url_for('static', filename='js/script.js') }}"></script>
 	</body>
 </html>
