@@ -1,6 +1,11 @@
 {% extends "layout.html" %}
 
 {% block content %}
+	<!-- Loader -->
+	<div class="loader">
+		<h1>Guerrasoft</h1>
+	</div>
+
 	<div class="row">
 		<div class="col-lg-5">
 			<div class="tablero">
@@ -308,6 +313,11 @@
 	</div>
 	<script type="text/javascript">
 
+		jQuery(window).on('load',function(){
+				$(".loader-img").fadeOut();
+				$(".loader").delay(1000).fadeOut("slow");
+		});
+
 		window.onload = function(){
 			document.getElementById("seccion2").style.display = 'none';
 			document.getElementById("seccion3").style.display = 'none';
@@ -333,19 +343,19 @@
 
 		$(document).ready(function() {
 			var $window = $(window);
-  		var $sidebar = $("#sidebar");
+  			var $sidebar = $("#sidebar");
 			var $sidebarOffset = $sidebar.offset();
 			var $activo3 = $("#boton3");
 			$window.scroll(function() {
-    	if($window.scrollTop() > $sidebarOffset.top) {
-				if ($activo3.hasClass('btn-secondary')){
-						document.getElementById("sidebardown").style.display = 'flex';
-					 }
-    	} else {
-					document.getElementById("sidebardown").style.display = 'none';
-					$sidebar.css("position","static");
-    	}
-  			});
+	    	if($window.scrollTop() > $sidebarOffset.top) {
+					if ($activo3.hasClass('btn-secondary')){
+							document.getElementById("sidebardown").style.display = 'flex';
+						 }
+	    	} else {
+						document.getElementById("sidebardown").style.display = 'none';
+						$sidebar.css("position","static");
+	    	}
+	  			});
 		})
 
 		function MyChangeElement(number){
