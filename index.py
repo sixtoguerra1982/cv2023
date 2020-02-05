@@ -16,6 +16,6 @@ if __name__ == '__main__':
 @app.route('/return-files/')
 def return_files_tut():
 	try:
-		return send_file('download/curriculum-vitae-SG-2019.pdf', attachment_filename='curriculum-vitae-SG-2019.pdf')
+		return send_file('download/curriculum-vitae-SG-2020.pdf', attachment_filename='curriculum-vitae-SG-2019.pdf')
 	except Exception as e:
 		return str(e)
