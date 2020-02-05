@@ -12,7 +12,7 @@
 			<div class="tablero">
 				<div class="datos_personales">
 					<div class="avatar">
-					 <img src="https://media.licdn.com/dms/image/C4D03AQEmW9nVy-1AyQ/profile-displayphoto-shrink_200_200/0?e=1562803200&v=beta&t=OX7YZYhXcx7IBirEGKj5kuFVzS4PmlwXZTlau9JJc9A">
+					 <img src="{{ url_for('static', filename='images/avatar.jpg') }}" width="100px" height="100px">
 					</div>
 					<h1 class="nombre"><div id="text"></div></h1>
 					<div class="centrar">
@@ -353,7 +353,7 @@
 
 		$(document).ready(function() {
 			var $window = $(window);
-  			var $sidebar = $("#sidebar");
+  		var $sidebar = $("#sidebar");
 			var $sidebarOffset = $sidebar.offset();
 			var $activo3 = $("#boton3");
 			$window.scroll(function() {
