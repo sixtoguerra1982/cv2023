@@ -218,35 +218,30 @@ h4::before{
 }
 
 .progress{
- border: 1px solid black;
- border-radius: 4px;
- width: 70%;
+ 	border: 1px solid black;
+ 	border-radius: 10px;
+ 
 
- transition: 0.1s ease-in-out;
- -webkit-transition: 0.1s ease-in-out; /* SAFARI */
- -moz-transition: 0.1s ease-in-out; /* FireFOX*/
- -o-transition: 0.1s ease-in-out; /* Opera*/
+ 	transition: 0.1s ease-in-out;
+ 	-webkit-transition: 0.1s ease-in-out; /* SAFARI */
+ 	-moz-transition: 0.1s ease-in-out; /* FireFOX*/
+ 	-o-transition: 0.1s ease-in-out; /* Opera*/
 
+	width: 100%;
 }
 
 .progress-bar{
   height: 16px;
   display: block;
   border-radius: 4px;
-
-
-
-
   -webkit-box-shadow: 0 0 1px 1px rgba(0, 0, 0, 0.25), inset 0 1px rgba(255, 255, 255, 0.1);
   box-shadow: 0 0 1px 1px rgba(0, 0, 0, 0.25), inset 0 1px rgba(255, 255, 255, 0.1);
-
-	background-color: green;
-	color: #6f42c1;
-
-	transition: background-color 0.3s ease-in-out;
+  background-color: green;
+  color: #6f42c1;
+    transition: background-color 0.3s ease-in-out;
 	-webkit-transition: background-color 0.3s ease-in-out;
-  -moz-transition: background-color 0.3s ease-in-out;
-  -o-transition: background-color 0.3s ease-in-out;
+  	-moz-transition: background-color 0.3s ease-in-out;
+  	-o-transition: background-color 0.3s ease-in-out;
 }
 
 .progress-bar:hover{
