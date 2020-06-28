@@ -445,7 +445,14 @@ footer img {
 }
 
 .proyecto{
+	display: inline-block;
+}
+
+.ultimoproyecto{
+	margin-left: 10%;
+}
+
+.proyecto-group{
 	display: block;
-  	margin-left: auto;
-  	margin-right: auto;
+	margin-left: 50px;
 }

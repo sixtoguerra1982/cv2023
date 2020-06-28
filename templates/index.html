@@ -170,50 +170,45 @@
 			</div>
 
 			<div class="tablero">
-
-				<ul><li><p><span>Proyectos:</span></p></li>
-
-				<div class="row">
-					<div class="offset-2 col-4">
-						<div class="proyecto">
-							<a href="https://salaen3.herokuapp.com/" target="_blank">
-								<div class="circulo">
-									<div class="text-center text-black mx-auto">
-										<img class="img-fluid" src="{{ url_for('static', filename='images/logo198x160.jpg') }}">
+				<ul><li><p><span>Proyectos:</span></p></li></ul>
+				<div class="proyecto-group">
+					<div class="row">
+						<div class="col-6">
+							<div class="proyecto ml-3">
+								<a href="https://salaen3.herokuapp.com/" target="_blank">
+									<div class="circulo">
+										<div class="text-center text-black mx-auto">
+											<img class="img-fluid" src="{{ url_for('static', filename='images/logo198x160.jpg') }}">
+										</div>
 									</div>
-								</div>
-							</a>
+								</a>
 								<img src="{{ url_for('static', filename='images/check-symbol.svg') }}" width="10px" height="10px">&nbsp;Sala en 3</img>
+							</div>
 						</div>
-					</div>	
-					<div class="col-4">
-						<div class="proyecto">
-							<a href="https://bicibeta.herokuapp.com/" target="_blank">
-								<div class="circulo">
-									<div class="text-center text-black mx-auto">
-										<img class="img-fluid" src="{{ url_for('static', filename='images/logo.jpg') }}">
+						<div class="col-6">
+							<div class="proyecto ml-3">
+								<a href="https://bicibeta.herokuapp.com/" target="_blank">
+									<div class="circulo">
+										<div class="text-center text-black mx-auto">
+											<img class="img-fluid" src="{{ url_for('static', filename='images/logo.jpg') }}">
+										</div>
 									</div>
-								</div>
-							</a>
+								</a>
 								<img src="{{ url_for('static', filename='images/check-symbol.svg') }}" width="10px" height="10px">&nbsp;Biciid</img>
+							</div>
 						</div>
-					</div>
-					<div class="offset-4 col-8">
-						<div class="proyecto">
+						<div class="offset-2 col-10">
+							<div class="proyecto ultimoproyecto">
 							<a href="https://ollaguerrasoft.herokuapp.com/" target="_blank">
 								<div class="circulo">
 									<div class="text-center text-black mx-auto">
-										<img class="img-fluid" src="{{ url_for('static', filename='images/olla.svg') }}">
+									<img class="img-fluid" src="{{ url_for('static', filename='images/olla.svg') }}">
 									</div>
 								</div>
-							</a>
+							</a>					
+							<img src="{{ url_for('static', filename='images/check-symbol.svg') }}" width="10px" height="10px">OllaGuerraSoft&nbsp;&nbsp;&nbsp;&nbsp;</img>
+							</div>
 						</div>
-					</div>
-				</div>
-
-				<div class="row">
-					<div class="offset-3 col-9">
-						<img src="{{ url_for('static', filename='images/check-symbol.svg') }}" width="10px" height="10px">&nbsp;OllaGuerraSoft</img>
 					</div>
 				</div>
 			</div>
