@@ -443,3 +443,9 @@ footer img {
  	-moz-transition: 0.1s ease-in-out; /* FireFOX*/
  	-o-transition: 0.1s ease-in-out; /* Opera*/
 }
+
+.proyecto{
+	display: block;
+  	margin-left: auto;
+  	margin-right: auto;
+}
