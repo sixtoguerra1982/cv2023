@@ -425,3 +425,34 @@ footer img {
 		-webkit-transform:translateX(-10px);
 	}
 }
+
+.circulo{
+	width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    border: 1px solid black;
+    overflow: hidden;
+    display: -webkit-box;
+    display: flex;
+    -webkit-box-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    align-items: center;
+    transition: 0.1s ease-in-out;
+ 	-webkit-transition: 0.1s ease-in-out; /* SAFARI */
+ 	-moz-transition: 0.1s ease-in-out; /* FireFOX*/
+ 	-o-transition: 0.1s ease-in-out; /* Opera*/
+}
+
+.proyecto{
+	display: inline-block;
+}
+
+.ultimoproyecto{
+	margin-left: 10%;
+}
+
+.proyecto-group{
+	display: block;
+	margin-left: 50px;
+}
