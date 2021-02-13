@@ -1,423 +1,456 @@
-{% extends "layout.html" %}
+{% extends "layout.html" %} {% block content %}
+<!-- Loader -->
+<div class="loader">
+    <h1>Guerrasoft ®</h1>
+    <div class="loader-img"></div>
+</div>
 
-{% block content %}
-	<!-- Loader -->
-	<div class="loader">
-		<h1>Guerrasoft ®</h1>
-		<div class="loader-img"></div>
-	</div>
-
-	<div class="row">
-		<div class="col-lg-5">
-			<div class="tablero">
-				<div class="datos_personales">
-					<div class="avatar">
-					 <img src="{{ url_for('static', filename='images/avatar.jpg') }}" width="100px" height="100px">
-					</div>
-					<h1 class="nombre"><div id="text"></div></h1>
-					<div class="centrar">
-						<small>Web Developer Junior</small>
-					</div>
-					<div class="centrar">
-						<a class="download" href="/return-files/" download="curriculum-vitae-SG-2019.pdf"><button class='btn btn-warning'><strong>Descargar Curriculum PDF <i class="fas fa-download"></i></strong></button></a>
-					</div>
-					<br>
-					<div class="centrar rrss">
-						<div class="social-button">
-							<div class="cuadrado">
-								<a href="https://www.facebook.com/sixtoguerra" target="blank" class="social-buttons__button social-button social-button--facebook" aria-label="Facebook" title="Facebook">
-		    					<span class="social-button__inner">
+<div class="row">
+    <div class="col-lg-5">
+        <div class="tablero">
+            <div class="datos_personales">
+                <div class="avatar">
+                    <img src="{{ url_for('static', filename='images/avatar.jpg') }}" width="100px" height="100px">
+                </div>
+                <h1 class="nombre">
+                    <div id="text"></div>
+                </h1>
+                <div class="centrar">
+                    <small>Web Developer Junior</small>
+                </div>
+                <div class="centrar">
+                    <a class="download" href="/return-files/" download="curriculum-vitae-SG-2019.pdf"><button class='btn btn-warning'><strong>Descargar Curriculum PDF <i class="fas fa-download"></i></strong></button></a>
+                </div>
+                <br>
+                <div class="centrar rrss">
+                    <div class="social-button">
+                        <div class="cuadrado">
+                            <a href="https://www.facebook.com/sixtoguerra" target="blank" class="social-buttons__button social-button social-button--facebook" aria-label="Facebook" title="Facebook">
+                                <span class="social-button__inner">
 		     					<i class="fab fa-facebook-f"></i>
 		    					</span>
-		  						</a>
-	  						</div>
-	  						<div class="cuadrado">
-		  						<a href="https://www.instagram.com/felicojo/" target="blank" class="social-buttons__button social-button social-button--instagram" aria-label="Instagram" title="Instagram">
-							    <span class="social-button__inner">
+                            </a>
+                        </div>
+                        <div class="cuadrado">
+                            <a href="https://www.instagram.com/felicojo/" target="blank" class="social-buttons__button social-button social-button--instagram" aria-label="Instagram" title="Instagram">
+                                <span class="social-button__inner">
 							     <i class="fab fa-instagram"></i>
 							    </span>
-							  	</a>
-						  	</div>
-						  	<div class="cuadrado">
-							  	<a href="https://www.linkedin.com/in/sixto-guerra-3321b5151/" target="blank" class="social-buttons__button social-button social-button--linkedin" aria-label="LinkedIn" title="LinkedIn">
-							    <span class="social-button__inner">
+                            </a>
+                        </div>
+                        <div class="cuadrado">
+                            <a href="https://www.linkedin.com/in/sixto-guerra-3321b5151/" target="blank" class="social-buttons__button social-button social-button--linkedin" aria-label="LinkedIn" title="LinkedIn">
+                                <span class="social-button__inner">
 							     <i class="fab fa-linkedin-in"></i>
 							    </span>
-							  	</a>
-						  	</div>
-						  	<div class="cuadrado">
-							  	<a href="https://github.com/sixtoguerra1982" target="blank" class="social-buttons__button social-button social-button--github" aria-label="GitHub" title="GitHub">
-							    <span class="social-button__inner">
+                            </a>
+                        </div>
+                        <div class="cuadrado">
+                            <a href="https://github.com/sixtoguerra1982" target="blank" class="social-buttons__button social-button social-button--github" aria-label="GitHub" title="GitHub">
+                                <span class="social-button__inner">
 							     <i class="fab fa-github"></i>
 							    </span>
-		            			</a>
-	            			</div>
-						</div>
+                            </a>
+                        </div>
+                    </div>
 
-					</div>
-					<hr>
-					<ul>
-						<li>
-							<p>
-								<span>Edad:</span>
-								37 Años.
-							</p>
-						</li>
-						<li>
-							<p>
-								<span>Nacionalidad:</span>
-								chilena.
-							</p>
-						</li>
-						<li>
-							<p>
-								<span>Teléfono:</span>
-								+56 9 36 72 9710
-							</p>
-						</li>
-						<li>
-							<p>
-								<span>E-mail:</span>
-								sixto.guerra1982@gmail.com
-							</p>
-						</li>
-						<li>
-							<p>
-								<span>Otros:</span>
-								Licencia de conducir clase B.
-							</p>
-						</li>
-					</ul>
-				</div>
-				<hr>
-				<div class="datos_personales">
-					<ul>
-						<li>
-							<p>
-								<span>Referencias:</span>
-								<p class="nombre_referencia
+                </div>
+                <hr>
+                <ul>
+                    <li>
+                        <p>
+                            <span>Edad:</span> 38 Años.
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            <span>Nacionalidad:</span> chilena.
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            <span>Teléfono:</span> +56 9 36 72 9710
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            <span>E-mail:</span> sixto.guerra1982@gmail.com
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            <span>Otros:</span> Licencia de conducir clase B.
+                        </p>
+                    </li>
+                </ul>
+            </div>
+            <hr>
+            <div class="datos_personales">
+                <ul>
+                    <li>
+                        <p>
+                            <span>Referencias:</span>
+                            <p class="nombre_referencia
 								">Sr. Ayaxs Fuentealba</p>
-								<p class="etiqueta">
-									<a class="collapse_personal" data-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample"><i class="fas fa-address-book fa-2x"></i>&nbsp;Jefe de Informática CAMS</a>
-									</p>
-									<div class="cuadro_referencia collapse" id="collapseExample">
-										<p>Yksa S.p.A.</p>
-										<p>+56 9 91 73 5051</p>
-										<p>afuentealba@syfcams.cl</p>
-									</div>
-							</p>
-						</li>
-					</ul>
-					<hr>
-					<ul>
-						<li>
-							<p>
-								<span id="skills">Referencias:</span>
-								<p class="nombre_referencia">Sr. Ignacio Muñoz</p>
-								<p>
-									<a class="collapse_personal" data-toggle="collapse" href="#collapseExample2" role="button">
-									<i class="fas fa-address-book fa-2x"></i>&nbsp;Subgerente Informática</a>
-								</p>
-								<div class="cuadro_referencia collapse" id="collapseExample2">
-									<p>Soser S.A.</p>
-									<p>+56 9 74 98 9952</p>
-									<p>ignacio.munoz@soser.cl</p>
-								</div>
-							</p>
-						</li>
-					</ul>
-				</div>
-			</div>
+                            <p class="etiqueta">
+                                <a class="collapse_personal" data-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample"><i class="fas fa-address-book fa-2x"></i>&nbsp;Jefe de Informática CAMS</a>
+                            </p>
+                            <div class="cuadro_referencia collapse" id="collapseExample">
+                                <p>Yksa S.p.A.</p>
+                                <p>+56 9 91 73 5051</p>
+                                <p>afuentealba@syfcams.cl</p>
+                            </div>
+                        </p>
+                    </li>
+                </ul>
+                <hr>
+                <ul>
+                    <li>
+                        <p>
+                            <span id="skills">Referencias:</span>
+                            <p class="nombre_referencia">Sr. Ignacio Muñoz</p>
+                            <p>
+                                <a class="collapse_personal" data-toggle="collapse" href="#collapseExample2" role="button">
+                                    <i class="fas fa-address-book fa-2x"></i>&nbsp;Subgerente Informática</a>
+                            </p>
+                            <div class="cuadro_referencia collapse" id="collapseExample2">
+                                <p>Soser S.A.</p>
+                                <p>+56 9 74 98 9952</p>
+                                <p>ignacio.munoz@soser.cl</p>
+                            </div>
+                        </p>
+                    </li>
+                </ul>
+            </div>
+        </div>
 
-			<div class="tablero">
-				<ul>
-						<li>
-							<p>
-								<span>Skills:</span>
-							</p>
-						</li>
-						<div class="mb-2">
-							<img src="{{ url_for('static', filename='images/check-symbol.svg') }}" width="10px" height="10px">&nbsp;HTML5<div class="progress">100%<div class="progress-bar w-100"></div></div>
-						</div>
-						<div class="mb-2">
-							<img src="{{ url_for('static', filename='images/check-symbol.svg') }}" width="10px" height="10px">&nbsp;Bootstrap<div class="progress">100%<div class="progress-bar w-100"></div></div>
-						</div>
-						<div class="mb-2">
-							<img src="{{ url_for('static', filename='images/check-symbol.svg') }}" width="10px" height="10px">&nbsp;CSS3<div class="progress">75%<div class="progress-bar w-75"></div></div>
-						</div>
-						<div class="mb-2">
-							<img src="{{ url_for('static', filename='images/check-symbol.svg') }}" width="10px" height="10px">&nbsp;JavaScript<div class="progress">70%</small><div class="progress-bar w-70"></div></div>
-						</div>
-						<div class="mb-2">
-							<img src="{{ url_for('static', filename='images/check-symbol.svg') }}" width="10px" height="10px">&nbsp;jQuery<div class="progress">80%<div class="progress-bar w-80"></div></div>
-						</div>
-						<div class="mb-2">
-							<img src="{{ url_for('static', filename='images/check-symbol.svg') }}" width="10px" height="10px">&nbsp;Ruby & Rails<div class="progress">80%<div class="progress-bar w-80"></div></div>
-						</div>
-						<div class="mb-2">
-							<img src="{{ url_for('static', filename='images/check-symbol.svg') }}" width="10px" height="10px">&nbsp;Ruby<div class="progress">80%<div class="progress-bar w-80"></div></div>
-						</div>
-						<div class="mb-2">
-							<img src="{{ url_for('static', filename='images/check-symbol.svg') }}" width="10px" height="10px">&nbsp;SQL<div class="progress">80%<div class="progress-bar w-80"></div></div>
-						</div>
-						<div class="mb-2">
-							<img src="{{ url_for('static', filename='images/check-symbol.svg') }}" width="10px" height="10px">&nbsp;Git<div class="progress">80%<div class="progress-bar w-80"></div></div>
-						</div>
-				</ul>
-			</div>
+        <div class="tablero">
+            <ul>
+                <li>
+                    <p>
+                        <span>Skills:</span>
+                    </p>
+                </li>
+                <div class="mb-2">
+                    <img src="{{ url_for('static', filename='images/check-symbol.svg') }}" width="10px" height="10px">&nbsp;HTML5
+                    <div class="progress">100%
+                        <div class="progress-bar w-100"></div>
+                    </div>
+                </div>
+                <div class="mb-2">
+                    <img src="{{ url_for('static', filename='images/check-symbol.svg') }}" width="10px" height="10px">&nbsp;Bootstrap
+                    <div class="progress">100%
+                        <div class="progress-bar w-100"></div>
+                    </div>
+                </div>
+                <div class="mb-2">
+                    <img src="{{ url_for('static', filename='images/check-symbol.svg') }}" width="10px" height="10px">&nbsp;CSS3
+                    <div class="progress">75%
+                        <div class="progress-bar w-75"></div>
+                    </div>
+                </div>
+                <div class="mb-2">
+                    <img src="{{ url_for('static', filename='images/check-symbol.svg') }}" width="10px" height="10px">&nbsp;JavaScript
+                    <div class="progress">70%</small>
+                        <div class="progress-bar w-70"></div>
+                    </div>
+                </div>
+                <div class="mb-2">
+                    <img src="{{ url_for('static', filename='images/check-symbol.svg') }}" width="10px" height="10px">&nbsp;jQuery
+                    <div class="progress">80%
+                        <div class="progress-bar w-80"></div>
+                    </div>
+                </div>
+                <div class="mb-2">
+                    <img src="{{ url_for('static', filename='images/check-symbol.svg') }}" width="10px" height="10px">&nbsp;Ruby & Rails
+                    <div class="progress">80%
+                        <div class="progress-bar w-80"></div>
+                    </div>
+                </div>
+                <div class="mb-2">
+                    <img src="{{ url_for('static', filename='images/check-symbol.svg') }}" width="10px" height="10px">&nbsp;Ruby
+                    <div class="progress">80%
+                        <div class="progress-bar w-80"></div>
+                    </div>
+                </div>
+                <div class="mb-2">
+                    <img src="{{ url_for('static', filename='images/check-symbol.svg') }}" width="10px" height="10px">&nbsp;SQL
+                    <div class="progress">80%
+                        <div class="progress-bar w-80"></div>
+                    </div>
+                </div>
+                <div class="mb-2">
+                    <img src="{{ url_for('static', filename='images/check-symbol.svg') }}" width="10px" height="10px">&nbsp;Git
+                    <div class="progress">80%
+                        <div class="progress-bar w-80"></div>
+                    </div>
+                </div>
+            </ul>
+        </div>
 
-		</div>
+    </div>
 
-		<div class="col-lg-7">
-			<div class="tablero">
-				<h2 class="nombre" id="titulo"></h2>
-				<div class="presentacion">
-					&nbsp;&nbsp;&nbsp;_Me he desempeñado en el área de desarrollo de software, soporte informático, helpdesk y administrador de equipos informáticos en general, con experiencia superior a 10 años en el mercado informático, desarrollando, implementando, coordinando y administrando sistemas computacionales y operaciones que involucran cambios y adaptación de procesos. Con la experiencia he incrementado cualidades y competencias importantes que se necesitan para el cargo tales como: Planificación, auto-administración, liderazgo, control.
-				</div>
-				<hr id="ror">
+    <div class="col-lg-7">
+        <div class="tablero">
+            <h2 class="nombre" id="titulo"></h2>
+            <div class="presentacion">
+                &nbsp;&nbsp;&nbsp;_Me he desempeñado en el área de desarrollo de software, soporte informático, helpdesk y administrador de equipos informáticos en general, con experiencia superior a 10 años en el mercado informático, desarrollando, implementando, coordinando
+                y administrando sistemas computacionales y operaciones que involucran cambios y adaptación de procesos. Con la experiencia he incrementado cualidades y competencias importantes que se necesitan para el cargo tales como: Planificación,
+                auto-administración, liderazgo, control.
+            </div>
+            <hr id="ror">
 
-				<div class="subtitulo">
-					<h4>Experiencia Ruby On Rails</h4>
-					<ul>
-						<li>Full Stack / Ruby & Rails.
-						<span class="item_li">Concluí satisfactoriamente el Bootcamp Full Stack realizado en Academia Desafió Latam, desde mayo a diciembre 2017 <a href="https://desafiolatam.com/certificados/chile/18-01-17/sixto_guerra.jpg" target="blank">Certificado de Aprobación&nbsp;<i class="fas fa-certificate fa-xs"></i></a></span>
-						</li>
-						<br>
-						<li>Proyecto Personal</li>
-						<span class="item_li">Para Absorber aun más los conocimientos durante 2018 desarrolle un pequeño emprendimiento realizado en RoR <a href="http://salaen3.herokuapp.com/" target="blank">Sala en 3&nbsp;<i class="fas fa-film fa-xs"></i></a></span>
-						<br>
-						<li>Ayudantias</li>
-						<span class="item_li">Desde mayo 2019 a la fecha, me encuentro realizando Ayudantías para el Curso 'Full Stack Ruby & Rails' de la academia Desafió Latam</span>
-					</ul>
-				</div>
+            <div class="subtitulo">
+                <h4>Experiencia Ruby On Rails</h4>
+                <ul>
+                    <li>Full Stack / Ruby & Rails.
+                        <span class="item_li">Concluí satisfactoriamente el Bootcamp Full Stack realizado en Academia Desafió Latam, desde mayo a diciembre 2017 <a href="https://desafiolatam.com/certificados/chile/18-01-17/sixto_guerra.jpg" target="blank">Certificado de Aprobación&nbsp;<i class="fas fa-certificate fa-xs"></i></a></span>
+                    </li>
+                    <br>
+                    <li>Proyecto Personal</li>
+                    <span class="item_li">Para Absorber aun más los conocimientos durante 2018 desarrolle un pequeño emprendimiento realizado en RoR <a href="http://salaen3.herokuapp.com/" target="blank">Sala en 3&nbsp;<i class="fas fa-film fa-xs"></i></a></span>
+                    <br>
+                    <li>Ayudantias</li>
+                    <span class="item_li">Desde mayo 2019 a la fecha, me encuentro realizando Ayudantías para el Curso 'Full Stack Ruby & Rails' de la academia Desafió Latam</span>
+                </ul>
+            </div>
 
-				<hr id="ancla" style="border: 0 ; border-top: 4px double blue; width: 90%; position: relative">
-				<div class="organizador" id="sidebar">
-					<div class="btn-toolbar" role="toolbar" aria-label="Toolbar with button groups">
-					  <div class="btn-group mr-2" role="group" aria-label="First group">
-					    <div type="button" class="btn btn-primary" onclick="MyChangeElement(1)" id="boton1">1</div>
-					    <div type="button" class="btn btn-secondary" onclick="MyChangeElement(2)" id="boton2">2</div>
-					    <div type="button" class="btn btn-secondary" onclick="MyChangeElement(3)" id="boton3">3</div>
-					  </div>
-					 </div>
-				</div>
-				<div id="seccion1">
-					<div class="subtitulo">
-						<h4>Formación académica</h4>
-						<ul>
-							<li>
-								2004-2006 Instituto de Formación Técnica Jhon F Kennedy
-								<p><span class="item_li">Titulado de “Análisis de Sistemas”</span></p>
-							</li>
-							<li>
-								1997-2000 Colegio Politécnico N°1 de Maipú.
-								<p><span class="item_li">Especialidad “Programación en Computación”</span></p>
-							</li>
-						</ul>
-					</div>
-					<div class="subtitulo">
-						<h4>Experiencia Profesional</h4>
-						<ul>
-							<li>
-								Agosto 2019 – Enero 2020 Aravena Beltran Binarybag LTDA.:
-								<span class="item_li">Desarrollador Trainee</span>
-								<span class="item_li">Desarrollo e implementación de sistemas</span>
-								<span class="item_li">Desarrollo de interfaces usuario</span>
-								<span class="item_li">Desarrollo de reportes y documentación</span>
-								<span class="item_li">Análisis de bases de datos</span>
-								<span class="item_li">Apoyo en labores de aseguramiento de calidad</span>
-							</li>
-							<br>
-							<li>
-								Abril 2018 – Febrero 2019 Cams Software y Finanzas S.A.:
-								<span class="item_li">Desarrollo de aplicaciones de escritorio para mesa de dinero Banco BCI</span>
-								<span class="item_li">Visual Basic 6.0</span>
-								<span class="item_li">Visual Studio 2012</span>
-								<span class="item_li">Macros Excel</span>
-								<span class="item_li">SQL</span>
-								<span class="item_li">Microsoft Access</span>
-								<span class="item_li">Sybase</span>
-							</li>
-						</ul>
-					</div>
-				</div>
+            <hr id="ancla" style="border: 0 ; border-top: 4px double blue; width: 90%; position: relative">
+            <div class="organizador" id="sidebar">
+                <div class="btn-toolbar" role="toolbar" aria-label="Toolbar with button groups">
+                    <div class="btn-group mr-2" role="group" aria-label="First group">
+                        <div type="button" class="btn btn-primary" onclick="MyChangeElement(1)" id="boton1">1</div>
+                        <div type="button" class="btn btn-secondary" onclick="MyChangeElement(2)" id="boton2">2</div>
+                        <div type="button" class="btn btn-secondary" onclick="MyChangeElement(3)" id="boton3">3</div>
+                    </div>
+                </div>
+            </div>
+            <div id="seccion1">
+                <div class="subtitulo">
+                    <h4>Formación académica</h4>
+                    <ul>
+                        <li>
+                            2004-2006 Instituto de Formación Técnica Jhon F Kennedy
+                            <p><span class="item_li">Titulado de “Análisis de Sistemas”</span></p>
+                        </li>
+                        <li>
+                            1997-2000 Colegio Politécnico N°1 de Maipú.
+                            <p><span class="item_li">Especialidad “Programación en Computación”</span></p>
+                        </li>
+                    </ul>
+                </div>
+                <div class="subtitulo">
+                    <h4>Experiencia Profesional</h4>
+                    <ul>
+                        <li>
+                            Noviembre 2020 – Actualidad ThunderLabs LTDA.:
+                            <span class="item_li">Desarrollador Junior Ruby & Rails</span>
+                            <span class="item_li">Desarrollo de modulos para sistemas</span>
+                            <span class="item_li">Desarrollo de interfaces de usuario</span>
+                            <span class="item_li">Desarrollo de reportes y documentación</span>
+                            <span class="item_li">Interacción back-end de Herramientas</span>
+                            <span class="item_li">Microsoft SQL Server</span>
+                        </li>
+                        <br>
+                        <li>
+                            Agosto 2019 – Enero 2020 Aravena Beltran Binarybag LTDA.:
+                            <span class="item_li">Desarrollador Trainee</span>
+                            <span class="item_li">Desarrollo e implementación de sistemas</span>
+                            <span class="item_li">Desarrollo de interfaces de usuario</span>
+                            <span class="item_li">Desarrollo de reportes y documentación</span>
+                            <span class="item_li">Análisis de bases de datos</span>
+                            <span class="item_li">Apoyo en labores de aseguramiento de calidad</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
 
-				<div id="seccion2">
-					<div class="subtitulo">
-						<h4>Experiencia Profesional</h4>
-						<ul>
-							<li>
-								Mayo 2015- Abril 2018 Sociedad de Servicios de Alimentación S.A.:
-								<span class="item_li">Mantención y configuración de infraestructura informática en general</span>
-								<span class="item_li">Control de Inventario TI</span>
-								<span class="item_li">HelpDesk</span>
-								<span class="item_li">Respaldo de información crítica</span>
-								<span class="item_li">Soporte y Mantención a Software de Planificación y Control</span>
-								<div class="item_li_2n mb-3">
-									<ol>
-										<li>Visual Studio 2012</li>
-										<li>Microsoft SQL Server</li>
-									</ol>
-								</div>
-							</li>
-							<li>
-								Noviembre 2014 – Marzo 2015, Anida Consultores S.A.:
-								<span class="item_li">Analista de Monitoreo</span>
-								<span class="item_li">Gestión de información proyecto provisión de nodos para Entel</span>
-								<span class="item_li">Pruebas de Conectividad.</span>
-								<span class="item_li">Provisión de nodos en herramientas NNM 7.5 Y 9i.</span>
-							</li>
-							<br>
-							<li>
-								Mayo 2007 – Mayo 2014, Intertek Labs & Testing Chile SPA.:
-								<span class="item_li">IT HelpDesk</span>
-								<span class="item_li">Mantención de Red, Software, Hardware, equipos informáticos en general</span>
-								<span class="item_li">Respaldo de Información</span>
-								<span class="item_li">Registro de Equipos</span>
-								<span class="item_li">Programación en Visual Basic 6.0</span>
-								<span class="item_li">Desde Febrero 2008 a Diciembre 2011 encargado Dpto. RRHH</span>
-							</li>
-							<br>
-							<li>
-								Febrero 2005 – Enero 2007, La Habana Vieja.:
-								<span class="item_li">Desarrollo y ejecución de sistemas de control</span>
-								<span class="item_li">Mantención de Equipos computacionales</span>
-							</li>
-							<br>
-							<li>
-								Marzo 2001 – Diciembre 2004, Electronic Desing.:
-								<span class="item_li">Desarrollo y Programación de sistemas en lenguaje Visual Basic 6.0 con motor de base de datos Access 97, Access 2000, Microsoft SQL Server, My SQL</span>
-								<span class="item_li">Desarrollo y mantención de redes computacionales</span>
-								<span class="item_li">Armado y mantención de computadores</span>
-								<span class="item_li">Manejo y Configuración de Sistemas Operativos</span>
-							</li>
-						</ul>
-					</div>
-				</div>
+            <div id="seccion2">
+                <div class="subtitulo">
+                    <h4>Experiencia Profesional</h4>
+                    <ul>
+                        <li>
+                            Abril 2018 – Febrero 2019 Cams Software y Finanzas S.A.:
+                            <span class="item_li">Desarrollo de aplicaciones de escritorio para mesa de dinero Banco BCI</span>
+                            <span class="item_li">Visual Basic 6.0</span>
+                            <span class="item_li">Visual Studio 2012</span>
+                            <span class="item_li">Macros Excel</span>
+                            <span class="item_li">SQL</span>
+                            <span class="item_li">Microsoft Access</span>
+                            <span class="item_li">Sybase</span>
+                        </li>
+                        <br>
+                        <li>
+                            Mayo 2015- Abril 2018 Sociedad de Servicios de Alimentación S.A.:
+                            <span class="item_li">Mantención y configuración de infraestructura informática en general</span>
+                            <span class="item_li">Control de Inventario TI</span>
+                            <span class="item_li">HelpDesk</span>
+                            <span class="item_li">Respaldo de información crítica</span>
+                            <span class="item_li">Soporte y Mantención a Software de Planificación y Control</span>
+                            <div class="item_li_2n mb-3">
+                                <ol>
+                                    <li>Visual Studio 2012</li>
+                                    <li>Microsoft SQL Server</li>
+                                </ol>
+                            </div>
+                        </li>
+                        <li>
+                            Noviembre 2014 – Marzo 2015, Anida Consultores S.A.:
+                            <span class="item_li">Analista de Monitoreo</span>
+                            <span class="item_li">Gestión de información proyecto provisión de nodos para Entel</span>
+                            <span class="item_li">Pruebas de Conectividad.</span>
+                            <span class="item_li">Provisión de nodos en herramientas NNM 7.5 Y 9i.</span>
+                        </li>
+                        <br>
+                        <li>
+                            Mayo 2007 – Mayo 2014, Intertek Labs & Testing Chile SPA.:
+                            <span class="item_li">IT HelpDesk</span>
+                            <span class="item_li">Mantención de Red, Software, Hardware, equipos informáticos en general</span>
+                            <span class="item_li">Respaldo de Información</span>
+                            <span class="item_li">Registro de Equipos</span>
+                            <span class="item_li">Programación en Visual Basic 6.0</span>
+                            <span class="item_li">Desde Febrero 2008 a Diciembre 2011 encargado Dpto. RRHH</span>
+                        </li>
+                        <br>
+                        <li>
+                            Febrero 2005 – Enero 2007, La Habana Vieja.:
+                            <span class="item_li">Desarrollo y ejecución de sistemas de control</span>
+                            <span class="item_li">Mantención de Equipos computacionales</span>
+                        </li>
+                        <br>
+                        <li>
+                            Marzo 2001 – Diciembre 2004, Electronic Desing.:
+                            <span class="item_li">Desarrollo y Programación de sistemas en lenguaje Visual Basic 6.0 con motor de base de datos Access 97, Access 2000, Microsoft SQL Server, My SQL</span>
+                            <span class="item_li">Desarrollo y mantención de redes computacionales</span>
+                            <span class="item_li">Armado y mantención de computadores</span>
+                            <span class="item_li">Manejo y Configuración de Sistemas Operativos</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
 
-				<div id="seccion3">
-					<div class="subtitulo">
-						<h4>Capacitación</h4>
-						<ul>
-							<li>
-								Mayo – Diciembre 2017 Bootcamp “Full Stack / Ruby & Rails.”
-								<span class="item_li">Taller intensivo Bootcamp Full Stack en academia de programación Desafío Latam con una duración de 32 semanas de clases. Conocimientos adquiridos Git, GitHub, Ruby, Rails 5.1, PostgreSQL, HTML5, CSS3, Bootstrap. Programación front end JavaScript, Ajax y APIs Rest</span>
-							</li>
-						</ul>
-					</div>
-				</div>
+            <div id="seccion3">
+                <div class="subtitulo">
+                    <h4>Capacitación</h4>
+                    <ul>
+                        <li>
+                            Mayo – Diciembre 2017 Bootcamp “Full Stack / Ruby & Rails.”
+                            <span class="item_li">Taller intensivo Bootcamp Full Stack en academia de programación Desafío Latam con una duración de 32 semanas de clases. Conocimientos adquiridos Git, GitHub, Ruby, Rails 5.1, PostgreSQL, HTML5, CSS3, Bootstrap. Programación front end JavaScript, Ajax y APIs Rest</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
 
-				<div class="organizador" id="sidebardown">
-					<div class="btn-toolbar" role="toolbar" aria-label="Toolbar with button groups">
-					  <div class="btn-group mr-2" role="group" aria-label="First group">
-					    <div type="button" class="btn btn-primary" onclick="MyChangeElement(1)" id="botondown1">1</div>
-					    <div type="button" class="btn btn-secondary" onclick="MyChangeElement(2)" id="botondown2">2</div>
-					    <div type="button" class="btn btn-secondary" onclick="MyChangeElement(3)" id="botondown3">3</div>
-					  </div>
-					 </div>
-				</div>
+            <div class="organizador" id="sidebardown">
+                <div class="btn-toolbar" role="toolbar" aria-label="Toolbar with button groups">
+                    <div class="btn-group mr-2" role="group" aria-label="First group">
+                        <div type="button" class="btn btn-primary" onclick="MyChangeElement(1)" id="botondown1">1</div>
+                        <div type="button" class="btn btn-secondary" onclick="MyChangeElement(2)" id="botondown2">2</div>
+                        <div type="button" class="btn btn-secondary" onclick="MyChangeElement(3)" id="botondown3">3</div>
+                    </div>
+                </div>
+            </div>
 
-			</div>
+        </div>
 
-		</div>
-	</div>
-	<script type="text/javascript">
+    </div>
+</div>
+<script type="text/javascript">
+    jQuery(window).on('load', function() {
+        $(".loader-img").fadeOut();
+        $(".loader").delay(1000).fadeOut("slow");
+    });
 
-		jQuery(window).on('load',function(){
-				$(".loader-img").fadeOut();
-				$(".loader").delay(1000).fadeOut("slow");
-		});
+    window.onload = function() {
+        document.getElementById("seccion2").style.display = 'none';
+        document.getElementById("seccion3").style.display = 'none';
+        var i, text, titulo;
+        i = 0;
+        text = "Sixto Felipe Guerra Urbina";
+        titulo = "Analista de Sistemas.";
+        typing();
 
-		window.onload = function(){
-			document.getElementById("seccion2").style.display = 'none';
-			document.getElementById("seccion3").style.display = 'none';
-			var i, text, titulo;
-			i = 0;
-			text = "Sixto Felipe Guerra Urbina";
-			titulo = "Analista de Sistemas.";
-			typing();
-			function typing(){
-				if (i<text.length){
-					document.getElementById("text").innerHTML += text.charAt(i);
-				}
-				if (i<titulo.length){
-					document.getElementById("titulo").innerHTML += titulo.charAt(i);
-				}
-				if (i<text.length || i<titulo.length){
-					setTimeout(typing,100);
-					i++;
-				}
-			}
-		}
+        function typing() {
+            if (i < text.length) {
+                document.getElementById("text").innerHTML += text.charAt(i);
+            }
+            if (i < titulo.length) {
+                document.getElementById("titulo").innerHTML += titulo.charAt(i);
+            }
+            if (i < text.length || i < titulo.length) {
+                setTimeout(typing, 100);
+                i++;
+            }
+        }
+    }
 
 
-		$(document).ready(function() {
-			var $window = $(window);
-  		var $sidebar = $("#sidebar");
-			var $sidebarOffset = $sidebar.offset();
-			var $activo3 = $("#boton3");
-			$window.scroll(function() {
-	    	if($window.scrollTop() > $sidebarOffset.top) {
-					if ($activo3.hasClass('btn-secondary')){
-							document.getElementById("sidebardown").style.display = 'flex';
-						 }
-	    	} else {
-						document.getElementById("sidebardown").style.display = 'none';
-						$sidebar.css("position","static");
-	    	}
-	  			});
-		})
+    $(document).ready(function() {
+        var $window = $(window);
+        var $sidebar = $("#sidebar");
+        var $sidebarOffset = $sidebar.offset();
+        var $activo3 = $("#boton3");
+        $window.scroll(function() {
+            if ($window.scrollTop() > $sidebarOffset.top) {
+                if ($activo3.hasClass('btn-secondary')) {
+                    document.getElementById("sidebardown").style.display = 'flex';
+                }
+            } else {
+                document.getElementById("sidebardown").style.display = 'none';
+                $sidebar.css("position", "static");
+            }
+        });
+    })
 
-		function MyChangeElement(number){
-			// mueve scroll
-			var destino = $("#ancla").offset().top;
-			var navbar = $("#navbar").css("height");
-			if (number == 3) {
-				$('html, body').animate({scrollTop: parseInt(destino) - parseInt(navbar)});
-			}
-			else {
-				$('html, body').animate({scrollTop: parseInt(destino) - parseInt(navbar)},800);
-			}
-			document.getElementById("sidebardown").style.display = 'none';
-			//
-			for (var i = 1; i < 4; i++){
-				if (i == number){
-					document.getElementById("seccion" + i).style.display = 'block';
-					document.getElementById("seccion" + i).classList.toggle ("rebotelr");
-				}
-				else{
-					document.getElementById("seccion" + i).style.display = 'none';
-					if ($("#seccion" + i).hasClass('rebotelr')){
-						$("#seccion" + i).removeClass('rebotelr');
-					}
-				}
-				var activar_boton = document.getElementById("boton" + i);
-				var activar_boton_down = document.getElementById("botondown" + i);
-				if ( i == number ) {
-					if (activar_boton.classList.contains("btn-secondary")){
-						activar_boton.classList.toggle ("btn-primary");
-						activar_boton.classList.toggle ("btn-secondary");
-					}
+    function MyChangeElement(number) {
+        // mueve scroll
+        var destino = $("#ancla").offset().top;
+        var navbar = $("#navbar").css("height");
+        if (number == 3) {
+            $('html, body').animate({
+                scrollTop: parseInt(destino) - parseInt(navbar)
+            });
+        } else {
+            $('html, body').animate({
+                scrollTop: parseInt(destino) - parseInt(navbar)
+            }, 800);
+        }
+        document.getElementById("sidebardown").style.display = 'none';
+        //
+        for (var i = 1; i < 4; i++) {
+            if (i == number) {
+                document.getElementById("seccion" + i).style.display = 'block';
+                document.getElementById("seccion" + i).classList.toggle("rebotelr");
+            } else {
+                document.getElementById("seccion" + i).style.display = 'none';
+                if ($("#seccion" + i).hasClass('rebotelr')) {
+                    $("#seccion" + i).removeClass('rebotelr');
+                }
+            }
+            var activar_boton = document.getElementById("boton" + i);
+            var activar_boton_down = document.getElementById("botondown" + i);
+            if (i == number) {
+                if (activar_boton.classList.contains("btn-secondary")) {
+                    activar_boton.classList.toggle("btn-primary");
+                    activar_boton.classList.toggle("btn-secondary");
+                }
 
-					if (activar_boton_down.classList.contains("btn-secondary")){
-						activar_boton_down.classList.toggle ("btn-primary");
-						activar_boton_down.classList.toggle ("btn-secondary");
-					}
-				}
-				else
-				{
-					if (activar_boton.classList.contains("btn-primary")){
-						activar_boton.classList.remove("btn-primary");
-						activar_boton.classList.add("btn-secondary");
-					}
+                if (activar_boton_down.classList.contains("btn-secondary")) {
+                    activar_boton_down.classList.toggle("btn-primary");
+                    activar_boton_down.classList.toggle("btn-secondary");
+                }
+            } else {
+                if (activar_boton.classList.contains("btn-primary")) {
+                    activar_boton.classList.remove("btn-primary");
+                    activar_boton.classList.add("btn-secondary");
+                }
 
-					if (activar_boton_down.classList.contains("btn-primary")){
-						activar_boton_down.classList.remove("btn-primary");
-						activar_boton_down.classList.add("btn-secondary");
-					}
-				}
-			}
-		}
-
-	</script>
+                if (activar_boton_down.classList.contains("btn-primary")) {
+                    activar_boton_down.classList.remove("btn-primary");
+                    activar_boton_down.classList.add("btn-secondary");
+                }
+            }
+        }
+    }
+</script>
 {% endblock%}
